@@ -7,6 +7,4 @@ permalink: "/"
 ---
 # Portfolio Index
 
-{: .fs-9 }
-
-This is the listing of all the various course work that Gail has completed, that has turned into the start of a portfolio! Click different projects on the left.
+This is the listing of all the various course work that Gail has completed, that has turned into the start of a portfolio! Click different projects in the menu.
