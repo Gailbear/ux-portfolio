@@ -10,6 +10,38 @@ permalink: nasfic2020redesign
 
 This was the final assignment for UX919C Information Architecture.
 
-Our assignment was to rearchitect a site's menu system, using a key user experience to show the before and after. I chose [\[Columbus NASFiC 2020\](http://columbus2020nasfic.org)](http://columbus2020nasfic.org "Columbus NASFiC 2020").
+Our assignment was to rearchitect a site's menu system, using a key user experience to show the before and after. I chose [Columbus NASFiC 2020](http://columbus2020nasfic.org "Columbus NASFiC 2020").
 
 {:toc}
+
+## Re-architected Site Map
+
+## User Experience Scenario
+Your friend Naomi mentioned that she was participating in a virtual convention this weekend, and that your favorite singer, Tom Smith, was a guest of honor. She gave you the website, [http://columbus2020nasfic.org], and told you he's got a concert on friday evening. You want to figure out what time it is, and attend it!
+
+## Current site experience
+### Step 1: Home Page
+{.no-toc}
+Click "Schedule"
+### Step 2: Top of Schedule Page
+{.no-toc}
+Ctrl-f in browser; type Tom Smith; click first item.
+### Step 3: Schedule Item
+{.no-toc}
+Confirm time of concert; to attend, click Auditorium link.
+### Step 4: Registration Form
+{.no-toc}
+Secret requirement: the text field must have a space in the middle of the text string!
+### Step 5: Auditorium Page
+{.no-toc}
+No way to find out what is currently showing here.
+
+## Redesigned site experience
+### Step 1: Home Page
+{.no-toc}
+### Step 2: Guest Bio
+{.no-toc}
+### Step 3: Identify Yourself Pop-up
+{.no-toc}
+### Step 4: Auditorium Page
+{.no-toc}
