@@ -28,5 +28,3 @@ fields:
   type: boolean
   label: has_toc
   default: true
-pages:
-- docs/nasfic2020redesign/site-redesign.md
