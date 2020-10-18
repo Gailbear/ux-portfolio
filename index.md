@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Gail Terman's Portfolio
+title: Portfolio Index
 description: This is Gail's fledgling UX Portfolio!
 permalink: "/"
 
