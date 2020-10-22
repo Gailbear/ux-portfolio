@@ -6,6 +6,19 @@
 img {
     width: 100%;
 }
+ol.sitemap, .sitemap ol {
+  counter-reset: item
+}
+.sitemap li {
+  display: block
+}
+.sitemap li:before {
+  content: counters(item, ".") ". ";
+  counter-increment: item
+}
+.visual-nav, .visual-nav div{
+    width: 100%;
+}
 </style>
 </head>
 <body>
@@ -26,6 +39,108 @@ img {
 </ul>
 
 <h2 id="sitemap">Re-architected Site Map</h2>
+<ol class="sitemap">
+    <h4>Main</h4>
+    <li>Home</li>
+    <li>Schedule</li>
+    <li>Map (see <a href="#visualnav">Visual Navigation</a>)</li>
+    <li>Zoom Rooms <ol>
+        <li>Auditorium</li>
+        <li>Music Room</li>
+        <li>Olentangy Room</li>
+        <li>Readings Room</li>
+        <li>Scioto Room</li>
+    </ol></li>
+    <li>Info Desk <ol>
+        <li>Report a Problem</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Newsletter</li>
+        <li>More <ol>
+            <li>Code of Conduct</li>
+            <li>Fanzine Lounge</li>
+            <li>Gaming</li>
+            <li>Guests</li>
+            <li>How to Attend</li>
+            <li>Masquerade</li>
+            <li>Music Schedule</li>
+            <li>NASFiC History</li>
+            <li>Prometheus Award</li>
+            <li>Social Spaces/Discord</li>
+        </ol></li>
+    </ol></li>
+    <h4>Utility</h4>
+    <li>Report a Problem</li>
+    <li>Discord link button</li>
+    <li>Logged in indicator</li>
+    <h4>Footer</h4>
+    <li>Code of Conduct</li>
+    <li>Report a Problem</li>
+    <li>Social Icons <ol>
+        <li>Facebook icon</li>
+        <li>Twitter icon</li>
+        <li>Instagram icon</li>
+        <li>Discord icon</li>
+    </ol></li>
+    <h4 id="visualnav">Visual Navigation</h4>
+    <p>Because this is an analog for a physical convention, a good mental model to use to help people orient themselves is a mall directory. This serves as a secondary navigation under map.</p>
+    <div class="visual-nav">
+        <div class="row">
+            <div class="col-12 col-sm-6 offset-lg-1 col-lg-4 border p-0">
+                <div class="row m-0 p-0">
+                    <div class="col-4 border-right py-5">
+                        Art show
+                    </div>
+                    <div class="col-8 px-0">
+                        <div class="row border-bottom mx-0 p-3">
+                            Vendors
+                        </div>
+                        <div class="row mx-0 p-3">
+                            Info Desk
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-0 p-0 border-top">
+                    <div class="col-6 border-right py-3">
+                        Gaming
+                    </div>
+                    <div class="col-6">
+                        <div class="row px-3">
+                            NASFiC History
+                        </div>
+                        <div class="row px-3">
+                            Fanzine Lounge
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 offset-lg-2 col-lg-4 border p-0">
+                <div class="row m-0 p-0 h-100">
+                    <div class="row border-bottom m-0 p-3">
+                        Auditorium
+                    </div>
+                    <div class="row border-bottom m-0">
+                        <div class="col-6 border-right p-3">
+                            Olentangy Room
+                        </div>
+                        <div class="col-6 p-3">
+                            Readings Room
+                        </div>
+                    </div>
+                    <div class="row m-0">
+                        <div class="col-6 border-right p-3">
+                            Scioto Room
+                        </div>
+                        <div class="col-6 px-3">
+                            <div class="row ml-0">Music Room</div>
+                            <div class="row ml-0">Music Info</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ol>
 
 <h2 id="scenario">User Experience Scenario</h2>
 
