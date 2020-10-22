@@ -12,13 +12,6 @@ sections:
   templates:
   - page
   - children-page
-- type: directory
-  path: docs
-  label: Docs
-  create: all
-  match: "**/*"
-  templates:
-  - page
 - type: document
   path: index.md
   label: Home
