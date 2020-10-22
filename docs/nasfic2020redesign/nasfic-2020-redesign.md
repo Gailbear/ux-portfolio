@@ -4,6 +4,8 @@ has_toc: true
 title: NASFiC 2020 Redesign
 nav_order: 2
 permalink: nasfic2020redesign
+parent: ''
+has_children: true
 
 ---
 # NASFiC 2020 Redesign
@@ -18,7 +20,7 @@ Our assignment was to rearchitect a site's menu system, using a key user experie
 
 ## User Experience Scenario
 
-Your friend Naomi mentioned that she was participating in a virtual convention this weekend, and that your favorite singer, Tom Smith, was a guest of honor. She gave you the website, \[http://columbus2020nasfic.org\], and told you he's got a concert on friday evening. You want to figure out what time it is, and attend it!
+Your friend Naomi mentioned that she was participating in a virtual convention this weekend, and that your favorite singer, Tom Smith, was a guest of honor. She gave you the website, [http://columbus2020nasfic.org], and told you he's got a concert on friday evening. You want to figure out what time it is, and attend it!
 
 ## Current site experience
 
