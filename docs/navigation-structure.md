@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Navigation Structure
-nav_order: 99
 has_children: false
+nav_exclude: true
 
 ---
 # Navigation Structure

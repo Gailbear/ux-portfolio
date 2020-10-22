@@ -1,8 +1,8 @@
 ---
 layout: default
-has_children: false
+has_toc: true
 title: NASFiC 2020 Redesign
-nav_order: 1
+nav_order: 2
 permalink: nasfic2020redesign
 
 ---

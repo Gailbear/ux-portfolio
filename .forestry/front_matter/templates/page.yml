@@ -23,7 +23,3 @@ fields:
   config:
     required: false
   label: permalink
-pages:
-- docs/configuration/configuration.md
-- docs/nasfic2020redesign/nasfic-2020-redesign.md
-- docs/navigation-structure.md

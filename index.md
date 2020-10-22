@@ -3,6 +3,7 @@ layout: default
 title: Portfolio Index
 description: This is Gail's fledgling UX Portfolio!
 permalink: "/"
+nav_order: 1
 
 ---
 # Portfolio Index
