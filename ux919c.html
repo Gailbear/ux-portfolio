@@ -59,7 +59,7 @@ ol.sitemap, .sitemap ol {
 
 <p>Prepared by Gail Terman.</p>
 
-<p>Our assignment was to rearchitect a site's menu system, using a key user experience to show the before and after. I chose <a href="http://columbus2020nasfic.org">Columbus 2020 NASFiC</a>.
+<p>Our assignment was to re-architect a site's menu system, using a key user experience to show the before and after. I chose <a href="http://columbus2020nasfic.org">Columbus 2020 NASFiC</a>.
 
 <nav>
 <h2>Table of Contents</h2>
@@ -107,18 +107,18 @@ ol.sitemap, .sitemap ol {
     <h4>Utility</h4>
     <li>Report a Problem</li>
     <li>Discord link button</li>
-    <li>Logged in indicator</li>
+    <li>Logged in/out indicator</li>
     <h4>Footer</h4>
     <li>Code of Conduct</li>
     <li>Report a Problem</li>
-    <li>Social Icons <ol>
+    <li>Social icons <ol>
         <li>Facebook icon</li>
         <li>Twitter icon</li>
         <li>Instagram icon</li>
         <li>Discord icon</li>
     </ol></li>
     <h4 id="visualnav">Visual Navigation</h4>
-    <p>Because this is an analog for a physical convention, a good mental model to use to help people orient themselves is a mall directory. This serves as a secondary navigation under map.</p>
+    <p>Because this is an analog for a physical convention, a good mental model to use to help people orient themselves is a mall directory. This serves as a secondary navigation under "Map". Below is a wireframe.</p>
     <div class="visual-nav">
         <div class="row">
             <div class="col-12 col-sm-6 offset-lg-1 col-lg-4 border p-0">
@@ -189,57 +189,57 @@ ol.sitemap, .sitemap ol {
 
 <h3>Step 1: Home Page</h3>
 <div class="card">
-    <img class="card-img-top" src="/ux-portfolio/assets/images/old_1.png" />
     <div class="card-body">
         <p class="card-text">Click "Schedule"</p>
     </div>
+    <img class="card-img-bottom" src="/ux-portfolio/assets/images/old_1.png" />
 </div>
 
 <h3>Step 2: Top of Schedule Page</h3>
 <div class="card">
-    <img class="card-img-top" src="/ux-portfolio/assets/images/old_2.png" />
     <div class="card-body">
         <p class="card-text">Ctrl-f in browser; type Tom Smith; click first item.</p>
     </div>
+    <img class="card-img-bottom" src="/ux-portfolio/assets/images/old_2.png" />
 </div>
 
 <h3>Step 3: Schedule Item</h3>
 
 <div class="card">
-    <img class="card-img-top" src="/ux-portfolio/assets/images/old_3.png" />
     <div class="card-body">
         <p class="card-text">Confirm time of concert; to attend, click Auditorium link.</p>
     </div>
+    <img class="card-img-bottom" src="/ux-portfolio/assets/images/old_3.png" />
 </div>
 <h3>Step 4: Registration Form</h3>
 
 <div class="card-deck">
     <div class="card">
-        <img class="card-img-top" src="/ux-portfolio/assets/images/old_4a.png" />
         <div class="card-body">
             <p class="card-text">Secret requirement: the text field must have a space in the middle of the text string!</p>
         </div>
+        <img class="card-img-bottom" src="/ux-portfolio/assets/images/old_4a.png" />
     </div>
     <div class="card col">
-        <img class="card-img-top" src="/ux-portfolio/assets/images/old_4b.png" />
         <div class="card-body">
             <p class="card-text">Click "Submit Form And Access Site"</p>
         </div>
+        <img class="card-img-bottom" src="/ux-portfolio/assets/images/old_4b.png" />
     </div>
 </div>
 
 
 <h3>Step 5: Auditorium Page</h3>
 <div class="card">
-    <img clss="card-img-top" src="/ux-portfolio/assets/images/old_5.png" />
     <div class="card-body">
         <p class="card-text">No way to find out what is currently showing here.</p>
     </div>
+    <img clss="card-img-bottom" src="/ux-portfolio/assets/images/old_5.png" />
 </div>
 </section>
 
 <section id="redesign">
-<h2>Redesigned site experience</h2>
+<h2>Redesigned Site Experience</h2>
 
 <h3 id="step1">Step 1: Home Page</h3>
 <div class="wireframe border container">
@@ -265,38 +265,53 @@ ol.sitemap, .sitemap ol {
         <h3>Guests of Honor</h3>
         <div class="row mx-5">
         <div class="col border mx-0 px-0">
+            <div class="row ml-3 text-center">
+                Author
+            </div>
             <div class="row p-3 border-bottom ml-0 portrait">
                 Picture
             </div>
             <div class="row ml-3 text-center">
-                <a href="#" >Name</a>
+                <a href="#step1" >Name</a>
             </div>
         </div>
         <div class="col border mx-0 px-0">
+            <div class="row ml-3 text-center">
+                Artist
+            </div>
             <div class="row p-3 border-bottom ml-0 portrait">
                 Picture
             </div>
             <div class="row ml-3 text-center">
-                <a href="#" >Name</a>
+                <a href="#step1" >Name</a>
             </div>
         </div>
         <div class="col border mx-0 px-0">
+            <div class="row ml-3 text-center">
+                Editor
+            </div>
             <div class="row p-3 border-bottom ml-0 portrait">
                 Picture
             </div>
             <div class="row ml-3 text-center">
-                <a href="#" >Name</a>
+                <a href="#step1" >Name</a>
             </div>
         </div>
         <div class="col border mx-0 px-0">
+            <div class="row ml-3 text-center">
+                Fan
+            </div>
             <div class="row p-3 border-bottom ml-0 portrait">
                 Picture
             </div>
             <div class="row ml-3 text-center">
-                <a href="#" >Name</a>
+                <a href="#step1" >Name</a>
             </div>
         </div>
         <div class="col border mx-0 px-0">
+            <div class="row ml-3 text-center">
+                Toastmaster
+            </div>
             <div class="row p-3 border-bottom mx-0 portrait">
                 Picture
             </div>
@@ -461,9 +476,13 @@ ol.sitemap, .sitemap ol {
 <section id="rationale">
 <h2>Design Rationale</h2>
 
-<p>To help inform my redesign of the site, I conducted a (very small) card sort with my friends and family. The dendogram it generated is below.</p>
+<p>To help inform my redesign of the site, I conducted a (very small) card sort with my friends and family. I used provenbyusers.com.
+    I had three people who go to conventions regularly sort the cards. The dendogram it generated is below.</p>
 
 <img src="/ux-portfolio/assets/images/card_sort.png" />
+
+<p>I also asked some survey questions to assess whether or not the audience was my target audience. I have included their answers below.</p>
+<img src="/ux-portfolio/assets/images/survey_questions.png" />
 </section>
 </div>
 </body>
