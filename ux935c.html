@@ -83,7 +83,7 @@ mark {
 <div class="container">
 <h1>UX935C Final Assignment</h1>
 
-<p>Our assignment was to create user interface design storyboards that illustrate 2 scenarios in a crowdsourced lost-and-found app. The app I'm designing is called "Finders Seekers". The two scenarios I have wireframed here are a Finder using a mobile phone, and a Seeker using a web browser on a laptop. I have also included some of the activities I did to support this design: 2 persona brainstorms (Finder and Seeker), a metaphor brainstorm, and an additional context scenario that I did not wireframe.</p>
+<p>Our assignment was to create user interface design storyboards that illustrate 2 scenarios in a crowdsourced lost-and-found app. The app I'm designing is called "Finders Seekers". The two scenarios I have wireframed here are a Finder using a mobile phone, and a Seeker using a web browser on a laptop. I have also included some of the activities I did to support this design: 2 persona brainstorms (Finder and Seeker), a metaphor brainstorm, the original context scenarios that I did wireframe, and an additional context scenario that I did not wireframe.</p>
 
 <nav>
 <h2>Table of Contents</h2>
@@ -118,7 +118,7 @@ mark {
         </map>
     </div>
     <div class="col-8 description">
-        <p>Avery can see the view through her camera. They tap the "camera" button to take a picture of the item.</p>
+        <p>Avery can see the view through their camera. They tap the "camera" button to take a picture of the item.</p>
     </div>
 </div>
 <div class="row wireframe phone" id="found2">
@@ -234,24 +234,27 @@ mark {
     <div class="col-4 image">
         <img src="/ux-portfolio/assets/images/uxdesign/return method.png" usemap="#mapreturn1" />
         <map name="mapreturn1">
-
+            <area shape="rect" coords="30,225,95,290" href="#return2">
         </map>
     </div>
     <div class="col-8 description">
-        <p></p>
+        <p>Avery is offered different options on how to return the item.</p>
+        <p>Mail It lets you ship it back to headquarters, where they will route it on to the seeker's destination, so no personal information is exchanged. Avery thinks that sounds good, so they choose that.</p>
     </div>
 </div>
 <div class="row wireframe phone" id="return2">
     <div class="col-4 image">
         <img src="/ux-portfolio/assets/images/uxdesign/shipping 1.png" usemap="#mapreturn2" />
         <map name="mapreturn2">
-
+            <area shape="rect" coords="27,185,195,265" href="#returnthanks">
         </map>
     </div>
     <div class="col-8 description">
-        <p></p>
+        <p>Avery can now print or email the shipping label, and then when it's in the mail, they can tap "I shipped it!"</p>
+        <p>If they need help figuring out what to do, they can click the "walk me through it" button to get step by step instructions.</p>
     </div>
 </div>
+<!-- help flow only if i have time
 <div class="row wireframe phone" id="return3">
     <div class="col-4 image">
         <img src="/ux-portfolio/assets/images/uxdesign/shipping 2.png" usemap="#mapreturn3" />
@@ -273,39 +276,30 @@ mark {
     <div class="col-8 description">
         <p></p>
     </div>
-</div>
+</div> -->
 <div class="row wireframe phone" id="returnthanks">
     <div class="col-4 image">
         <img src="/ux-portfolio/assets/images/uxdesign/Shipped Thanks.png" usemap="#mapreturnthx" />
         <map name="mapreturnthx">
-
+            <area shape="rect" coords="10,65,210,400" href="#menu2">
         </map>
     </div>
     <div class="col-8 description">
-        <p></p>
+        <p>Avery can tap anywhere to go back to the Finders Seekers menu.</p>
     </div>
 </div>
 <div class="row wireframe phone" id="menu2">
     <div class="col-4 image">
         <img src="/ux-portfolio/assets/images/uxdesign/Menu 2.png" usemap="#mapmenu2" />
         <map name="mapmenu2">
-
+            <area shape="rect" coords="22,190,200,260" href="#lostfound">
         </map>
     </div>
     <div class="col-8 description">
-        <p></p>
+        <p>From this screen, Avery can check on the status of pending lost or found items, or enter a new lost or found item by tapping the "NEW +" button.</p>
+        <p>They now see that the status of the ring is "shipped". They feel satisfied that they have helped returned someone's lost class ring!</p>
     </div>
 </div>
-<h4>Context Scenario</h4>
-<ol>
-    <li>Avery is on the T heading home after work when they spot something shiny on the floor. Thinking it might be a quarter, they pick it up, and realize it’s someone’s class ring.</li>
-    <li>Avery has recently downloaded the app. They open it up and report a found item</li>
-    <li>The app prompts them through taking a picture, choosing a general category, records the location (* how do we do this on a t or in a cab?) and chooses a type of “secret” information - the engraving on the inside, and enters it.</li>
-    <li>The app asks Avery where they are putting the ring in the meantime so they don’t forget, Avery chooses the outside pocket of their backpack, and writes that in the app.</li>
-    <li>The next morning, the app tells Avery that they have a possible owner. They look at the submitted secret - it says “Beth H. Smith”, but because of the curly font, Avery had thought that it said “Beth N. Smithe” so it wasn’t an automatic match. Avery looks at the picture Beth submitted of the ring, and it matches, and the text is also close, and selects “accept claim”.</li>
-    <li>The app presents a few options for giving back the property - Avery chooses “insured package” and prints out the shipping label that it gives her (a la amazon returns). They pack it securely and ship it off at the nearest ups store to headquarters, and marks it in the app. They get a star!</li>
-    <li>A few days later, Avery gets a message from Beth thanking them so much for finding the ring, and feels really happy and good.</li>
-</ol>
 </section>
 
 
@@ -461,6 +455,25 @@ mark {
 
 <section id="scenario3">
 <h2>Additional Context Scenarios</h2>
+<h3>Finder Scenario - Class Ring (longer term)</h3>
+<ol>
+    <li>Avery is on the T heading home after work when they spot something shiny on the floor. Thinking it might be a quarter, they pick it up, and realize it’s someone’s class ring.</li>
+    <li>Avery has recently downloaded the app. They open it up and report a found item</li>
+    <li>The app prompts them through taking a picture, choosing a general category, records the location (* how do we do this on a t or in a cab?) and chooses a type of “secret” information - the engraving on the inside, and enters it.</li>
+    <li>The app asks Avery where they are putting the ring in the meantime so they don’t forget, Avery chooses the outside pocket of their backpack, and writes that in the app.</li>
+    <li>The next morning, the app tells Avery that they have a possible owner. They look at the submitted secret - it says “Beth H. Smith”, but because of the curly font, Avery had thought that it said “Beth N. Smithe” so it wasn’t an automatic match. Avery looks at the picture Beth submitted of the ring, and it matches, and the text is also close, and selects “accept claim”.</li>
+    <li>The app presents a few options for giving back the property - Avery chooses “insured package” and prints out the shipping label that it gives her (a la amazon returns). They pack it securely and ship it off at the nearest ups store to headquarters, and marks it in the app. They get a star!</li>
+    <li>A few days later, Avery gets a message from Beth thanking them so much for finding the ring, and feels really happy and good.</li>
+</ol>
+<h3>Seeker Scenario - Class Ring (longer term)</h3>
+<ol>
+    <li>When Beth goes to take off her rings when she goes to bed, like she does every night, she realizes that she’s lost her class ring. She panics - that is worth a lot of money, and it’s hard to replace!</li>
+    <li>She fires up her laptop and goes to the web app. She goes to report a missing item. She describes it as a class ring, and includes identifying details, including a “secret” she picks, the class graduation year. She also notes the general places that she had been that day - the T, walking to her office on newbury street, in her office, and the restaurant she went to for lunch. She also uploads a picture from her facebook from when she got it a few years ago, and posted a picture.</li>
+    <li>After she submits, the app searches for a possible match, and comes up with one, showing her the picture. It’s her ring! It asks her to enter the “secret” information specified by the finder , the engraving. She can’t quite remember what it was, so she selects “not exact” and types “Beth H. Smith”. </li>
+    <li>Since it’s not an exact match, she gets a message that the finder will compare the details. She goes to bed, relieved.</li>
+    <li>In the morning Beth checks the app to see if the finder has responded. She sees that her package is being mailed, insured, back to headquarters and then on to her. She can track the package the whole way.</li>
+    <li>A few days later, she receives her ring in the mail, and marks the item as returned. She sends a heartfelt thank you to her anonymous finder through the app, telling them how much it means to her to have this ring back.</li>
+</ol>
 <h3>Seeker Scenario - Charlie Card (recent)</h3>
 <ol>
     <li>When it’s time to get on the T to go home from an outing, Lorenzo realizes he doesn’t have his charlie card</li>
