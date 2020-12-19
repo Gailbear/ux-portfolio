@@ -1,0 +1,490 @@
+<html>
+<head>
+<title>UX935C - Finders Seekers</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<style type="text/css">
+img {
+    width: 100%;
+}
+ol.sitemap, .sitemap ol {
+  counter-reset: item
+}
+.sitemap li {
+  display: block
+}
+.sitemap li:before {
+  content: counters(item, ".") ". ";
+  counter-increment: item
+}
+.visual-nav, .visual-nav div{
+    width: 100%;
+}
+
+.portrait {
+    height: 150px;
+}
+
+.container:not(.wireframe)>section {
+    margin-top: 50px;
+}
+
+.container:not(.wireframe) > section > h3 {
+    margin-top: 20px;
+}
+
+.modal {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.embed {
+    height: 400px;
+}
+
+.back {
+    color: white;
+    background-color: darkslateblue;
+    height: 40px;
+}
+
+.back a {
+    color: white;
+    text-decoration: none;
+}
+mark {
+    background-color: #dedcef;
+}
+
+.row.wireframe {
+    padding: 20px;
+    padding-top: 70px;
+    width: 800px;
+    height: 600px;
+    border: 1px solid gray;
+    margin-bottom: 30px;
+}
+
+.row.wireframe.phone img {
+    height:450px;
+    width: auto;
+}
+
+</style>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="back p-1 pl-3">
+        <a href="/ux-portfolio"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+        </svg>
+        Gail Terman's Portfolio
+        </a>
+    </div>
+</div>
+<div class="container">
+<h1>UX935C Final Assignment</h1>
+
+<p>Our assignment was to create user interface design storyboards that illustrate 2 scenarios in a crowdsourced lost-and-found app. The app I'm designing is called "Finders Seekers". The two scenarios I have wireframed here are a Finder using a mobile phone, and a Seeker using a web browser on a laptop. I have also included some of the activities I did to support this design: 2 persona brainstorms (Finder and Seeker), a metaphor brainstorm, and an additional context scenario that I did not wireframe.</p>
+
+<nav>
+<h2>Table of Contents</h2>
+<ul>
+    <li><a href="#scenario1">Wireframes: Scenario 1 - Finder</a></li>
+    <li><a href="#scenario2">Wireframes: Scenario 2 - Seeker</a></li>
+    <li><a href="#personas">Persona Brainstorms</a></li>
+    <li><a href="#metaphors">Metaphor Brainstorm</a></li>
+    <li><a href="#scenario3">Additional Context Scenarios</a></li>
+</ul>
+</nav>
+
+<section id="scenario1">
+<h2>Wireframes: Scenario 1 - Finder</h2>
+<div class="row wireframe phone" id="lostfound">
+    <div class="col-4 image">
+        <img src="/ux-portfolio/assets/images/uxdesign/Lost_Found.png" usemap="#maplostfound"/>
+        <map name="maplostfound">
+            <area shape="rect" coords="10, 235, 210, 400" href="#found1">
+        </map>
+    </div>
+    <div class="col-8 description">
+        <p>Avery is on the T heading home after work when they spot something shiny on the floor. Thinking it might be a quarter, they pick it up, and realize it’s someone’s class ring. </p>
+        <p>Avery has recently downloaded Finders Seekers. They open it up and click "I found something". </p>
+    </div>
+</div>
+<div class="row wireframe phone" id="found1">
+    <div class="col-4 image">
+        <img src="/ux-portfolio/assets/images/uxdesign/Found 1.png" usemap="#mapfound1" />
+        <map name="mapfound1">
+            <area shape="circle" coords="111,378,15" href="#found2">
+        </map>
+    </div>
+    <div class="col-8 description">
+        <p>Avery can see the view through her camera. They tap the "camera" button to take a picture of the item.</p>
+    </div>
+</div>
+<div class="row wireframe phone" id="found2">
+    <div class="col-4 image">
+        <img src="/ux-portfolio/assets/images/uxdesign/Found 2.png" usemap="#mapfound2" />
+        <map name="mapfound2">
+            <area shape="circle" coords="68,378,15" href="#found1">
+            <area shape="circle" coords="146,378,15" href="#found3">
+        </map>
+    </div>
+    <div class="col-8 description">
+        <p>After Avery has taken a photo, it lets them either retake the photo by pressing the grey circle button, or accept the photo with the green checkmark button.</p>
+    </div>
+</div>
+<div class="row wireframe phone" id="found3">
+    <div class="col-4 image">
+        <img src="/ux-portfolio/assets/images/uxdesign/Found 3.png" usemap="#mapfound3" />
+        <map name="mapfound3">
+            <area shape="rect" coords="25, 365, 190, 395" href="#found3-scrolled">
+        </map>
+    </div>
+    <div class="col-8 description">
+        <p>The app now asks Avery for more information about the item they found, including:</p>
+        <ul>
+            <li>a general item type from a typeahead suggestion list</li>
+            <li>location and time of finding the item</li>
+            <li>a written description of the item</li>
+            <li><a href="#found3-scrolled">scroll</a> for more</li>
+        </ul>
+    </div>
+</div>
+<div class="row wireframe phone" id="found3-scrolled">
+    <div class="col-4 image">
+        <img src="/ux-portfolio/assets/images/uxdesign/Found 3 -scrolled.png" usemap="#mapfound3scr" />
+        <map name="mapfound3scr">
+            <area shape="rect" coords="175,105,240,140" href="#found3">
+            <area shape="rect" coords="70,298,145,325" href="#found-reminder">
+        </map>
+    </div>
+    <div class="col-8 description">
+        <p>(<a href="#found3">scroll back</a>)</p>
+        <p>The last piece of information the app asks for is a secret of some sort, to prevent people who don't own the item from claiming it.</p>
+        <p>Avery chooses the engraving on the inside of the ring, and does the best they can to read the very swirly script, guessing "Beth N. Smithe."</p>
+        <p>Then they click "Post" to submit the item to Finders Seekers.</p>
+    </div>
+</div>
+<div class="row wireframe phone" id="found-reminder">
+    <div class="col-4 image">
+        <img src="/ux-portfolio/assets/images/uxdesign/Found Reminder.png" usemap="#mapfoundrem" />
+        <map name="mapfoundrem">
+            <area shape="rect" coords="155,270,190,285" href="#found-thanks">
+        </map>
+    </div>
+    <div class="col-8 description">
+        <p>Avery is prompted to write a note to themselves about where they put the ring, so it doesn't get lost a second time.</p>
+        <p>After thinking about it, Avery decides to put the ring in the outside pocket of their backpack, and taps "Done".</p>
+    </div>
+</div>
+<div class="row wireframe phone" id="found-thanks">
+    <div class="col-4 image">
+        <img src="/ux-portfolio/assets/images/uxdesign/Found Thanks.png" usemap="#mapfoundthx" />
+        <map name="mapfoundthx">
+            <area shape="rect" coords="10,65,210,400" href="#menu1">
+        </map>
+    </div>
+    <div class="col-8 description">
+        <p>Avery sees a thank you screen, and can tap anywhere on the screen to go to the Finders Seekers menu.</p>
+    </div>
+</div>
+<div class="row wireframe phone" id="menu1">
+    <div class="col-4 image">
+        <img src="/ux-portfolio/assets/images/uxdesign/Menu.png" usemap="#mapmenu1" />
+        <map name="mapmenu1">
+            <area shape="rect" coords="22,190,200,260" href="#lostfound">
+            <area shape="rect" coords="130,305,195,370" href="#match-notify">
+        </map>
+    </div>
+    <div class="col-8 description">
+        <p>From this screen, Avery can check on the status of pending lost or found items, or enter a new lost or found item by tapping the "NEW +" button.</p>
+        <p>The <a href="#match-notify">Next Day</a>...</p>
+    </div>
+</div>
+<div class="row wireframe phone" id="match-notify">
+    <div class="col-4 image">
+        <img src="/ux-portfolio/assets/images/uxdesign/match notification.png" usemap="#mapmatchnotif" />
+        <map name="mapmatchnotif">
+            <area shape="rect" coords="15,130,208,187" href="#match1">
+        </map>
+    </div>
+    <div class="col-8 description">
+        <p>The next morning when Avery checks their phone, they see a notification from Finders Seekers.</p>
+        <p>If they tap it, they are brought to the match screen in the app.</p>
+        <p>If they want, they can also get to the same flow by opening the app themselves and click on the status for a particular item. (This is not pictured here.)</p>
+    </div>
+</div>
+<div class="row wireframe phone" id="match1">
+    <div class="col-4 image">
+        <img src="/ux-portfolio/assets/images/uxdesign/match 1.png" usemap="#mapmatch1" />
+        <map name="mapmatch1">
+            <area shape="circle" coords="181,342,15" href="#return1">
+        </map>
+    </div>
+    <div class="col-8 description">
+        <p>Avery can now review the match. They can look at any pictures, compare secrets, and see relevant location information.</p>
+        <p>Avery takes a look at the responses from the seeker, and notes that the name on the inside of the ring could definitely match, especially with the swirly script used.</p>
+        <p>Avery also notes that the graduation year on the ring, which isn't visible from the photo they took, is correct, and that the location data for the seeker matches where they found the ring.</p>
+        <p>Avery decides that this is definitely a match, and clicks the green checkmark button.</p>
+        <p>If Avery had decided that this person definitly wasn't a match, they could have clicked the red cancel button.</p>
+        <p>If Avery had been unsure and wanted to ask about more details, they could have clicked the yellow question mark button, which would have let them ask another question of the seeker. This would be selected from a pre-defined list of questions.</p>
+    </div>
+</div>
+<div class="row wireframe phone" id="return1">
+    <div class="col-4 image">
+        <img src="/ux-portfolio/assets/images/uxdesign/return method.png" usemap="#mapreturn1" />
+        <map name="mapreturn1">
+
+        </map>
+    </div>
+    <div class="col-8 description">
+        <p></p>
+    </div>
+</div>
+<div class="row wireframe phone" id="return2">
+    <div class="col-4 image">
+        <img src="/ux-portfolio/assets/images/uxdesign/shipping 1.png" usemap="#mapreturn2" />
+        <map name="mapreturn2">
+
+        </map>
+    </div>
+    <div class="col-8 description">
+        <p></p>
+    </div>
+</div>
+<div class="row wireframe phone" id="return3">
+    <div class="col-4 image">
+        <img src="/ux-portfolio/assets/images/uxdesign/shipping 2.png" usemap="#mapreturn3" />
+        <map name="mapreturn3">
+
+        </map>
+    </div>
+    <div class="col-8 description">
+        <p></p>
+    </div>
+</div>
+<div class="row wireframe phone" id="return4">
+    <div class="col-4 image">
+        <img src="/ux-portfolio/assets/images/uxdesign/shipping 3b.png" usemap="#mapreturn4" />
+        <map name="mapreturn4">
+
+        </map>
+    </div>
+    <div class="col-8 description">
+        <p></p>
+    </div>
+</div>
+<div class="row wireframe phone" id="returnthanks">
+    <div class="col-4 image">
+        <img src="/ux-portfolio/assets/images/uxdesign/Shipped Thanks.png" usemap="#mapreturnthx" />
+        <map name="mapreturnthx">
+
+        </map>
+    </div>
+    <div class="col-8 description">
+        <p></p>
+    </div>
+</div>
+<div class="row wireframe phone" id="menu2">
+    <div class="col-4 image">
+        <img src="/ux-portfolio/assets/images/uxdesign/Menu 2.png" usemap="#mapmenu2" />
+        <map name="mapmenu2">
+
+        </map>
+    </div>
+    <div class="col-8 description">
+        <p></p>
+    </div>
+</div>
+<h4>Context Scenario</h4>
+<ol>
+    <li>Avery is on the T heading home after work when they spot something shiny on the floor. Thinking it might be a quarter, they pick it up, and realize it’s someone’s class ring.</li>
+    <li>Avery has recently downloaded the app. They open it up and report a found item</li>
+    <li>The app prompts them through taking a picture, choosing a general category, records the location (* how do we do this on a t or in a cab?) and chooses a type of “secret” information - the engraving on the inside, and enters it.</li>
+    <li>The app asks Avery where they are putting the ring in the meantime so they don’t forget, Avery chooses the outside pocket of their backpack, and writes that in the app.</li>
+    <li>The next morning, the app tells Avery that they have a possible owner. They look at the submitted secret - it says “Beth H. Smith”, but because of the curly font, Avery had thought that it said “Beth N. Smithe” so it wasn’t an automatic match. Avery looks at the picture Beth submitted of the ring, and it matches, and the text is also close, and selects “accept claim”.</li>
+    <li>The app presents a few options for giving back the property - Avery chooses “insured package” and prints out the shipping label that it gives her (a la amazon returns). They pack it securely and ship it off at the nearest ups store to headquarters, and marks it in the app. They get a star!</li>
+    <li>A few days later, Avery gets a message from Beth thanking them so much for finding the ring, and feels really happy and good.</li>
+</ol>
+</section>
+
+
+<section id="scenario2">
+<h2>Wireframes: Scenario 2 - Seeker</h2>
+</section>
+
+<section id="personas">
+<h2>Persona Brainstorms</h2>
+<p>These are not fully formed personas, but a brainstorm I did to help clarify the main type of users of this app. In order to become actual personas, they'd need to be more specified. I also came up with a few more personas that were part of the initial thoughts about users, but I did not flesh out more. They are: </p>
+<ul>
+    <li> small business who wants to use this as their "lost and found" (a specialized finder)</li>
+    <li>a retailer who wants to adverise based on lost item type (so that people can replace their lost item)</li>
+    <li>the local police department (especially when it comes to potentially high-value items)</li> 
+    <li>the person looking for free stuff or to turn valuable lost items into cash (this is more of an anti-persona, or someone we would not want to use the app, and might need to design for it being hard for them to use)</li>
+</ul>
+<div class="persona">
+    <h3>Finder</h3>
+    <ul>
+        <li><h5>Problems, Goals, Emotions</h5>
+            <ul>
+                <li>Have something that is not theirs</li>
+                <li>Want to give it back to the person who lost it (or not?)</li>
+                <li>Don’t want to steal the thing</li>
+                <li>Empathetic - know how you would feel if you lost something</li>
+                <li>Don’t want to give it back to the wrong person</li>
+                <li>Want to be helpful</li>
+            </ul>
+        </li>
+        <li><h5>Relevant behaviors, attitudes, and beliefs</h5>
+            <ul>
+                <li>Try to find identifying information</li>
+                <li>Try to find lost and found in the place (or near the place) they found it</li>
+                <li>Go to police</li>
+                <li>Tweet /other social media with some but not all details</li>
+                <li>Craigslist - lost items?</li>
+                <li>Call any phone numbers found on item?</li>
+                <li>Contact credit card companies or dmv if wallet?</li>
+                <li>Generally hopeful</li>
+            </ul>
+        </li>
+        <li><h5>Biggest pain points</h5>
+            <ul>
+                <li>Don’t know how to contact the right person</li>
+                <li>Want to help, but no time</li>
+            </ul>
+        </li>
+        <li><h5>Devices/channels they use</h5>
+            <ul>
+                <li>Phone app - finding the thing</li>
+                <li>Maybe web app later to help someone claim item</li>
+                <li>Police - phone or in person</li>
+            </ul>
+        </li>
+        <li><h5>End goal – what is the tangible result they are looking for</h5>
+            <ul>
+                <li>Give the item back to the person who lost it</li>
+                <li>At the very least, put it somewhere safe/where someone can find it</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="persona">
+    <h3>Seeker</h3>
+    <ul>
+        <li><h5>Problems, Goals, Emotions</h5>
+            <ul>
+                <li>They lost a thing</li>
+                <li>Very upset</li>
+                <li>Want the thing back</li>
+                <li>Want to “report” it to someone something etc</li>
+                <li>Want sympathy?</li>
+                <li>Wish they could go back in time</li>
+                <li>Depends on the thing - might be a safety concern or a identity theft concern (phone/wallet/keys etc)</li>
+            </ul>
+        </li>
+        <li><h5>Relevant behaviors, attitudes, and beliefs</h5>
+            <ul>
+                <li>Personal history of losing things, especially new things</li>
+                <li>The thing is gone forever</li>
+                <li>Look everywhere</li>
+                <li>Retrace steps</li>
+                <li>Tell facebook</li>
+                <li>Police???</li>
+                <li>Ask for help from friends</li>
+                <li>Replace it? How urgent</li>
+                <li>Out of proportion reactions - other interactions with mental health issues</li>
+                <li>“If you’ve lost it, you might lose it”</li>
+            </ul>
+        </li>
+        <li><h5>Biggest pain points</h5>
+            <ul>
+                <li>Don’t have the thing</li>
+                <li>Need the thing for right now - tickets?</li>
+            </ul>
+        </li>
+        <li><h5>Devices/channels they use</h5>
+            <ul>
+                <li>Phone app initially</li>
+                <li>Web interface later</li>
+                <li>Talk to a person? Right after</li>
+                <li>Physical signs?</li>
+            </ul>
+        </li>
+        <li><h5>End goal – what is the tangible result they are looking for</h5>
+            <ul>
+                <li>Find their thing</li>
+                <li>Replace their thing</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</section>
+
+<section id="metaphors">
+<h2>Metaphor Brainstorm</h2>
+<p>A metaphor brainstorm is when you list a bunch of metaphors for the kind of activity you want your app to do, and then list what those metaphors have as key aspects of their operation and design. This can help give you some context of the types of mental models people might have when using your app. I've highlighted the two metaphors below that I chose to expand on, and in the expansions, I've highlighted things that seem especially relevant to me for my app.</p>
+<h3>Metaphors for "Lost and Found"</h3>
+<ul>
+    <li><mark>Lost and found at school</mark></li>
+    <li>Lost pet signs</li>
+    <li>Tile app</li>
+    <li><mark>Dating app</mark></li>
+    <li>freecycle/craigslist</li>
+    <li>Ebay</li>
+    <li>Police station</li>
+    <li>Those signs on the inside of bathroom stalls (for whatever) both “are you being hurt” and “free ukulele lessons”</li>
+</ul>
+<h4>Lost and found at school</h4>
+<ul>
+    <li><mark>easy to find location - for example, in my middle school, Near the locker room entrance across from the cafeteria</mark></li>
+    <li>Janitors might find things and put them there while cleaning</li>
+    <li>Other kids might find things and put it there</li>
+    <li><mark>Valuable things go to office</mark></li>
+    <li>Can just take things like sweatshirts </li>
+    <li>Visual recognition of people who belong in the school setting</li>
+    <li>Dig through the bin - usually have a description of what you’re looking for</li>
+    <li><mark>Anything that’s left over at the end of a school year/semester gets donated (or trashed)</mark></li>
+    <li><mark>Announcement a week before donations telling you to come get your stuff</mark></li>
+    <li>Magazines, lots of clothes mostly</li>
+</ul>
+<h4>Dating app</h4>
+<ul>
+    <li>Swipe right/swipe left</li>
+    <li>Search by age/gender/religion/habits/appearance etc</li>
+    <li><mark>Profile with what you’re looking for</mark></li>
+    <li><mark>Maybe location if you’re nearby</mark></li>
+    <li><mark>Pictures</mark></li>
+    <li>Ability to report people or pictures</li>
+    <li>chat</li>
+</ul>
+</section>
+
+<section id="scenario3">
+<h2>Additional Context Scenarios</h2>
+<h3>Seeker Scenario - Charlie Card (recent)</h3>
+<ol>
+    <li>When it’s time to get on the T to go home from an outing, Lorenzo realizes he doesn’t have his charlie card</li>
+    <li>He opens up his Finders Seekers app to report a missing item.</li>
+    <li>He types in a description of what he lost, including “secret” identifying details like the number from his last purchase of funds online.</li>
+    <li>His phone shares the GPS history for the last n hours and it analyzes a possible location map.</li>
+    <li>He clicks submit and users in those areas are notified.</li>
+    <li>He gets a message a few minutes later from Sean who says he found something that might be Lorenzo’s Charlie Card on a sidewalk. The app confirms that the details match, and Sean agrees to meet Lorenzo outside Park Street station. Lorenzo marks the item as found and in transit?</li>
+    <li>Lorenzo gets his card back, and marks the case as solved.</li>
+</ol>
+
+<h3>Finder Scenario - Charlie Card (recent)</h3>
+<ol>
+
+    <li>Sean has previously downloaded the app and is already a user. One day walking in the common, he gets a notification on his phone that someone has lost a charlie card, potentially in this area.</li>
+    <li>He takes a quick look around, spotting what looks like a charlie card on the nearby sidewalk.</li>
+    <li>He clicks the notification on his phone, which asks for a picture, and prompts him to enter a piece of potentially identifying information specified by the loser (in this case, the number) without seeing what the loser put as the answer.</li>
+    <li>The app confirms that the answers match, and opens up a chat screen to contact the Loser. It has some default messages, so Sean chooses “Hey I think I found your lost -----.”</li>
+    <li>The app lets Sean pick locations he’s willing to meet Lorenzo on a map (kind of like uber), and then directs both people there.</li>
+    <li>To help find lorenzo, when you get close, both phones play the same (catchy, non-trademarked) tune or flash the same color screen</li>
+    <li>Sean gives lorenzo back his charlie card, and confirms the drop off happened on his side. He gets a star for doing this thing. Or points, like waze.</li>
+</ol>
+
+</section>
+</div>
+</body>
+</html>
