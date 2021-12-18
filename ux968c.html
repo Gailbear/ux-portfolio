@@ -3,6 +3,163 @@
 <head>
 <title>UX968C - Planorama Survey Creation Journey Map</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<style type="text/css">
+
+.back {
+    color: white;
+    background-color: darkslateblue;
+    height: 40px;
+}
+
+.back a {
+    color: white;
+    text-decoration: none;
+}
+
+.tasks div {
+  background-color: #c8d2d3;
+}
+
+.tasks div:nth-child(even) {
+  background-color: #9bacc5;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  margin-left: -1rem;
+  border-top: 1rem solid transparent;
+  border-left: 0.5rem solid #c8d2d3;
+  border-bottom: 1rem solid transparent;
+  float: left;
+}
+
+.arrow.dark {
+  border-left: 0.5rem solid #9bacc5;
+}
+
+.map {
+  height: 15rem;
+  background-color: #f2f2f2;
+  position: relative;
+}
+
+.map .expectation {
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  border-bottom: 2px dashed #cad0e0;
+  left: 0px;
+}
+
+.map .expectation:after {
+  content: 'Expectation';
+  position: absolute;
+  color: #cad0e0;
+  top: 100%;
+}
+
+.context div {
+  position: relative;
+  text-align: center;
+}
+
+.context div:after {
+  content: '';
+  border-top: 2px solid #8e5858;
+  border-left: 2px solid #8e5858;
+  border-right: 2px solid #8e5858;
+  position: absolute;
+  top: 0px;
+  left: 0.5rem;
+  width: calc(100% - 1rem);
+  height: calc(100% - 10px);
+}
+
+.map .circle {
+  border-radius: 50%;
+  background-color: black;
+  height: 3rem;
+  width: 3rem;
+  position: absolute;
+  border: 0.5rem solid gray;
+}
+
+.circle.blue {
+  background-color: #547294;
+  border: 0.5rem solid #cad0e0;
+  top: 40%;
+}
+
+.circle.green {
+  background-color: #0d662b;
+  border: 0.5rem solid #51db83;
+  top: 10%;
+}
+
+.circle.red {
+  background-color: #c20000;
+  border: 0.5rem solid #eda2b1;
+  top: 65%;
+}
+
+.step-1 {
+  left: 10%;
+}
+
+.step-2a {
+  left: 18%;
+}
+
+.step-2b {
+  left: 26%;
+}
+
+.step-2c {
+  left: 34%;
+}
+
+.step-2d {
+  left: 42%;
+}
+
+.step-3a {
+  left: 51%;
+}
+
+.step-3b {
+  left: 59%;
+}
+
+.step-4a {
+  left: 68%;
+}
+
+.step-4b {
+  left: 76%;
+}
+
+.step-5 {
+  left: 92%;
+}
+
+.journeymap-sidescroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.journeymap-content {
+  width: 1000px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.timeline {
+  height: 100%;
+  align-content: end;
+}
+
+</style>
 </head>
 <body>
   <div class="container-fluid">
@@ -35,7 +192,7 @@
 <section id="persona">
 <h2>Persona: Pat Planner</h2>
 <p>To help understand the context of the software, here is one of our primary personas: Pat Planner.</p>
-<div class="row">
+<div class="row border mb-3">
   <div class="col-12 col-lg-8">
     <div class="row">
       <div class="col-12">
@@ -65,7 +222,7 @@
               <li><strong>Word Processor</strong> (Microsoft Word, Google Docs)</li>
               <li><strong>Spreadsheet Program</strong> (Microsoft Excel, Google Sheets)</li>
               <li><strong>Email</strong> (Gmail, Office365 Outlook)</li>
-              <li><strong></strong>Calendar software (Google Calendar)</li>
+              <li><strong>Calendar software</strong> (Google Calendar)</li>
             </ul>
           </div>
           <div class="col-12">
@@ -92,12 +249,79 @@
     <div class="row">
       <div class="col-12">
         <p>Pat works a boring 9 to 5 job, and then comes home and spends the rest of the evening volunteering for conventions. Their friends and family are also involved, so "unrelated" gatherings often turn into impromptu meetings. Pat needs software that will help plan the convention program, keeping <strong>all the relevant information secure and in one place.</strong></p>
-        <p> Pat has a few concerns about any software they are going to use for the convention. First and foremost, the <strong>privacy of participants</strong> is very important, especially as there are many famous authors. Also, many times in the past participants have found themselves assigned to program items that make them feel uncomfortable, or that they did not really want to be on, so following a <strong>consent-based model for assigning participants to program items</strong> is key.</p>
-        <p>Having a more diverse and inclusive convention is very important to Pat. <strong>Diverse and inclusive language</strong> is important to not alienate people, and <strong>diversity metrics</strong> are important to be able to track progress, or lack thereof. Any software needs to include both of those. All content should have a <strong>robust diversity review process</strong>, to help mitigate the impact of unconscious bias.</p>
+        <p> Pat has a few concerns about any software they are going to use for the convention. First and foremost, the <strong>privacy of participants</strong> is very important, especially as there are many famous authors. Also, many times in the past participants have found themselves assigned to program items that make them feel uncomfortable, or that they had little or no interest in, so following a <strong>consent-based model for assigning participants to program items</strong> is key.</p>
+        <p>Having a more diverse and inclusive convention is very important to Pat. <strong>Diverse and inclusive language</strong> is important to avoid alienating people, and <strong>diversity metrics</strong> are important to be able to track progress, or lack thereof. Any software needs to include both of those. All content should have a <strong>robust diversity review process</strong>, to help mitigate the impact of unconscious bias.</p>
       </div>
     </div>
   </div>
 </div>
+</section>
+
+<section id="description">
+  <h2>Task background: Survey Creation</h2>
+  <p>One of the tasks at the beginning of a planning cycle is to contact potential program participants and ask them if they're interested in being part of the convention program. Ideally, information about the demographics, interests, and online persona (social media or web presence) would also be collected, to assist in the vetting and diversity review process. Usually, this information is collected using an online survey.</p>
+  <p>The survey generally consists of several types of questions: short and long answer, multiple choice, and some fields that need specifically formatted information, such as email or physical address. It also needs some basic branching capability, so it can display different sets of questions based on a respondent's previous answers.</p>
+  <p>Ideally, responses from a user would be tied to their person record in the system. That would allow the planner to view the information in a unified place. Also, the respondent could log back into the system and edit their answers if their information changes.</p>
+</section>
+
+<section id="journeymap" >
+  <h2>Journey Map</h2>
+  <h3>Pat Planner - Survey Creation</h3>
+  <div class="journeymap-sidescroll mb-3">
+    <div class="journeymap-content">
+  <div class="row context">
+    <div class="col-2">Outside</div>
+    <div class="col-5">Survey Editing</div>
+    <div class="col-1">Survey View</div>
+    <div class="col-1">Admin</div>
+    <div class="col-2">Survey View</div>
+    <div class="col-1">Survey Settings</div>
+  </div>
+  <div class="row">
+    <div class="col-12 map">
+      <div class="expectation"></div>
+      <div class="circle blue step-1"></div>
+      <div class="circle green step-2a"></div>
+      <div class="circle blue step-2b"></div>
+      <div class="circle red step-2c"></div>
+      <div class="circle red step-2d"></div>
+      <div class="circle red step-3a"></div>
+      <div class="circle blue step-3b"></div>
+      <div class="circle blue step-4a"></div>
+      <div class="circle red step-4b"></div>
+      <div class="circle blue step-5"></div>
+      <div class="row timeline small">
+        <div class="col-2">1 to 3 weeks</div>
+        <div class="col-4">a few hours</div>
+        <div class="col-2">1 week</div>
+        <div class="col-3">2 weeks</div>
+        <div class="col-1">5 mins</div>
+      </div>
+    </div>
+  </div>
+  <div class="row tasks">
+    <div class="col-2">Pre-planning</div>
+    <div class="col-4"><span class="arrow"></span>Entering Questions</div>
+    <div class="col-2"><span class="arrow dark"></span>Review & Edit</div>
+    <div class="col-3"><span class="arrow"></span>Pilot</div>
+    <div class="col-1"><span class="arrow dark"></span>Publish</div>
+  </div>
+  <div class="row small ">
+    <div class="col-2 border">I write the questions beforehand in a shared word processor document. It's easier to make comments asychronously, and no one is really focused on the convention just yet. Everyone is already familiar with how to access shared documents. I don't really expect the software to re-implement Google Docs.</div>
+    <div class="col-1 border">Wow! This looks like real software. Create works just like I expect it to. It's very snappy!</div>
+    <div class="col-1 border">I don't quite understand what some of these buttons are supposed to do, or how I can accomplish common tasks. Some of them are fine though.</div>
+    <div class="col-1 border">There is no WYSIWYG formatting capability at all, so I was told to hand-write the html if I want formatting to appear in my questions. I don't know html!</div>
+    <div class="col-1 border">I don't understand how pages or branching are supposed to work. They don't make any sense to me. I think something might be broken?</div>
+    <div class="col-1 border">If I'm editing the page, and someone else edits the page, it's a race to see whose changes stick. This means I have to check with others outside the application.</div>
+    <div class="col-1 border">I can preview my changes in a separate tab. Every time I make a change, I can refresh, and see what it looks like now.</div>
+    <div class="col-1 border">I'm adding users in order to invite them to pilot the survey. It is about as easy as I expect.</div>
+    <div class="col-2 border">In order to get someone a click-to-login survey link, I have to ask a developer. As a workaround, I can just send the piloter the survey link, and instructions on how to reset their password, which they have to do before they can take the survey. However, that is messy.</div>
+    <div class="col-1 border">Publishing the survey is easy, and has the expected warning dialogs. This is what I expect from survey software.</div>
+  </div>
+</div>
+</div>
+<h4>Insights</h4>
+<p>In general, we could help Pat a lot by including a WYSIWYG editor and an easier way to link to the survey for piloting purposes. There are also clearly still some bugs that need to be worked out. (This journey was constructed from several conversations I had with our first users during their initial encounters with the software.)</p>
 </section>
 
 <section id="credits">
